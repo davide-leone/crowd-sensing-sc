@@ -30,7 +30,7 @@ Contains tools for analyzing the performance and gas consumption of the contract
 
 ---
 
-## 🛠️ Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/)
@@ -42,20 +42,33 @@ Contains tools for analyzing the performance and gas consumption of the contract
 ### Installation
 ```bash
 cd CrowdSensingProject
-npm install
-truffle compile
+npm install -g truffle
+npm install chai chai-as-promised
 ```
 
-### Running Tests
+## Compile, deploy and test the solution
+
+Open two terminals (T1 and T2) in the `CrowdSensingProject` folder.
+
+### Compile (T1)
+```bash
+truffle compile
+```
+### Deploy (T2)
+```bash
+npx ganache -a [n_accounts]
+```
+
+### Run Tests (T1)
 ```bash
 truffle test
 ```
 
-### Analyzing Results
-Navigate to the Results Analysis folder and open the Jupyter notebook:
+## Analyze Results
+Navigate to the `Results Analysis` folder and open the Jupyter notebook:
 ```bash
 jupyter notebook
 ```
 
-### License
+## License
 This project is provided for academic and research purposes. For licensing inquiries, please contact the authors of the original paper.
